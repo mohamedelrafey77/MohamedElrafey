@@ -1,0 +1,330 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: 'Tajawal', sans-serif;
+}
+
+h1,h2,h3,
+h4,h5,h6{
+    font-family: 'Tajawal', sans-serif;
+}
+
+section{
+    margin: 70px 0px;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    padding: 25px 0px;
+}
+
+img{
+    max-width: 100%;
+}
+
+p{
+    font-family: 'Tajawal', sans-serif;
+    line-height: 30px;
+}
+
+ul{
+    padding: 0px;
+}
+
+li{
+    list-style: none;
+    font-family: 'Tajawal', sans-serif;
+}
+
+span{
+    font-family: 'Tajawal', sans-serif;
+}
+
+.bx{
+    background-color: #fdca32;
+    font-size: 35px;
+    color: #fff;
+    max-width: fit-content;
+    text-align: center;
+    padding: 4px;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border-radius: 5px;
+    position: relative;
+    margin: 10px auto;
+    text-transform: uppercase;
+}
+
+/*start css to the navbar*/
+nav{
+    background-color: #fff;
+    border-bottom: 1px solid #f6f6f6;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 37%);
+    border-radius: 0px !important;
+    padding: 5px 0px;
+} 
+nav .navbar-brand {
+    color: #051e34;
+    font-size: 16px;
+    text-align: left;
+    letter-spacing: 1px;
+    position: relative;
+}
+nav .navbar-brand span{
+    font-weight: bold;
+    margin-right: 3px;
+}
+nav .navbar-brand::before{
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: #fdca32;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+}
+nav button{
+    background-color: #fdca32 !important;
+    border: 1px solid #fdca32;
+    border-radius: 0px !important;
+    box-sizing: border-box;
+}
+nav button span{
+    background-color: #051e34;
+}
+nav .nav li a{
+    color: #051e34;
+    font-size: 16px;
+}
+nav .nav li a::first-letter{
+    text-transform: uppercase;
+}
+nav .nav li:hover a{
+    background-color: transparent !important;
+    color: #0a5faa;
+    transition: .3s ease-in-out;
+}
+/* start css to the main-header section */
+.main-header h2{
+    color: #051e34;
+    font-size: 35px;
+    font-weight: bold;
+}
+.main-header h2::first-letter{
+    text-transform: uppercase;
+}
+.main-header span{
+    background-color: #fdca32;
+    color: #051e34;
+    font-size: 16px;
+    padding: 5px;
+    display: block;
+    margin: 10px 0px;
+    max-width: fit-content;
+}
+.main-header p{
+    color: #051e34;
+    font-size: 17px;
+}
+.main-header img{
+    width: 300px;
+    height: 300px;
+}
+/* start css to the skills section */
+.skills .row{
+    margin-top: 20px;
+}
+.skills .box{
+    background-color: #fff;
+    border: 1px solid #f6f6f6;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 37%);
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    align-items: center;
+    position: relative;
+}
+.skills .box i{
+    color: #051e34;
+    float: left;
+    font-size: 30px;
+    margin: 5px 15px 0px 0px;
+}
+.skills .box h6{
+    color: #051e34;
+    font-size: 16px;
+}
+.skills .box h6::first-letter{
+    text-transform: uppercase;
+}
+.skills .box::before{
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: #fdca32;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+}
+/* start css to the projects section */
+.projects .row{
+    margin-top: 20px;
+}
+.projects .probox{
+    margin-top: 20px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    border: 3px dotted #051e34;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.projects .probox .overlay{
+    position: absolute;     
+    opacity:0;
+    bottom:0;
+    right:0;
+    top:100%;
+    height:0;
+    width:100%;
+    overflow: hidden;
+    transition: .5s ease;
+    background-color: rgba(71, 71, 128, 0.8);
+    align-items: center;
+    padding-top: 50px;
+    text-align: center;
+}
+.projects .probox:hover .overlay{
+    opacity: 1;
+    top: 0;
+    height: 100%;
+    transition: .5s ease-in;
+}
+.projects .probox .overlay button{
+    display: block;
+    background-color: #fdca32;
+    width: auto;
+    height: auto;
+    border-radius: 4px;
+    text-align: center;
+    margin: 5px auto;
+    border: 1px solid #fdca32;
+    padding: 6px;
+    cursor: pointer;
+}
+.projects .probox .overlay button a{
+    color: #051e34;
+    font-family: 'Tajawal';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none !important;
+}
+.projects .probox .overlay h6{
+    color: #fff;
+    margin-top: 15px;
+    font-size: 16px;
+    background-color: #051e34;
+    padding: 7px 0px;
+}
+.projects .probox .overlay span{
+    color: #fff;
+    text-transform: uppercase;
+}
+.projects .probox .overlay span i{
+    color: #fdca32;
+    margin: 0px 5px 0px 5px;
+}
+/* start css to the whatsapp div */
+.whatsapp{
+    position: fixed;
+    left: 30px;
+    top: 80%;
+    z-index: 99999;
+    display: block;
+}
+.whatsapp span{
+    position: absolute;
+    background-color: #fdca32;
+    border: 1px solid #fdca32;
+    border-radius: 2px;
+    text-align: center;
+    color: #051e34;
+    max-width: fit-content;
+    visibility: hidden;
+    display:inline-block;
+    margin: -27px 0px 0px 20px;
+    padding: 3px;
+    display: inline-block;
+    font-size: 15px;
+}
+.whatsapp:hover span{
+    visibility: visible;
+    transition: .4s ease-in-out;
+}
+.whatsapp span::before{
+    position: absolute;
+    content: "";
+    color: #fdca32;
+    background-color: #fdca32;
+    display: block;
+    width: 15px;
+    height: 15px;
+    left: -8px;
+    top: 40%;
+    transform: rotate(45deg);
+}
+/*start css to the footer */
+footer{
+    margin-top: 70px;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    background-color: #051e34;
+    padding-top: 50px;
+}
+footer .row{
+    margin-top: 20px;
+}
+footer ul{
+    text-align: center;
+    margin-top: 30px;
+}
+footer ul li{
+    display: inline-block;
+    margin:30px 10px;
+}
+footer ul li img{
+    max-width: 100%;
+    width: 120px;
+}
+footer .social {
+    margin:25px 0px;
+    text-align: center;
+}
+footer .social li{
+    text-align: center !important;
+    margin: 25px;
+}
+footer .social li a{
+    color: #fff;
+    text-align: center !important;
+}
+footer .row:last-child{
+    text-align: center;
+    padding-bottom: 25px;
+}
+footer span{
+    color: #fff;
+    font-size: 16px;
+}
